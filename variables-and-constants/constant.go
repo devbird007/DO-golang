@@ -11,7 +11,6 @@ func main() {
 	hours := 24
 	minutes := int32(60)
 	fmt.Println(hours * year)
-	fmt.Println(minutes * year)
 	fmt.Println(minutes * leapYear)
-	fmt.Println(hours * leapYear)
+	fmt.Println(minutes * year)
 }

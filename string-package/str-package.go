@@ -24,4 +24,8 @@ func main() {
 	fields := strings.Fields(data)
 	fmt.Printf("%q\n", fields)
 	fmt.Println(fields)
+
+	// strings.ReplaceAll
+	fmt.Println(strings.ReplaceAll(balloon, "has", "had"))
+
 }
