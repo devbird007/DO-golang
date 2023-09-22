@@ -21,3 +21,6 @@ func main() {
 		fmt.Println("Sammy was not found.")
 	}
 }
+
+// Whenever you wish to get a particular value from a map in Go,
+// it is important to also verify the value's existence in the map.

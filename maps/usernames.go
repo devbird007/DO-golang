@@ -14,13 +14,12 @@ func main() {
 		fmt.Println("Enter a name:")
 
 		var name string
-		l, err := fmt.Scanln(&name)
+		_, err := fmt.Scanln(&name)
 
 		if err != nil {
 			panic(err)
 		}
 
-		fmt.Println(l)
 		name = strings.TrimSpace(name)
 
 		if u, ok := usernames[name]; ok {

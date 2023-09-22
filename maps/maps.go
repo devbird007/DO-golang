@@ -25,7 +25,7 @@ func main() {
 	sort.Strings(keys) // This sorts it out alphabetically
 	fmt.Printf("%q\n", keys)
 
-	// Retrieve just the values in the mao
+	// Retrieve just the values in the map
 	values := []string{}
 
 	for _, value := range sammy {
