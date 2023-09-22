@@ -19,9 +19,10 @@ func capitalize(name string) (string, int, error) {
 }
 
 func main() {
-	name, size, err := capitalize("sammy")
+	name, size, err := capitalize("Samurai Jack")
 	if err != nil {
 		fmt.Println("An error occurred:", err)
+		return
 	}
 
 	fmt.Printf("Capitalized name: %s, length: %d\n", name, size)
