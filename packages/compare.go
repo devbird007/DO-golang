@@ -1,6 +1,7 @@
 package main
 
 import (
+	crand "crypto/rand"
 	"fmt"
 	"math/rand"
 	"os"
@@ -30,7 +31,7 @@ func main() {
 
 	// Generate the pseudo-random numbers
 	for i := 0; i < 5; i++ {
-		b1[i] = byte(rand.Intn(256)) // Where the magic happens!
+		b1[i] = byte(rand.Intn(400)) // Where the magic happens!
 	}
 
 	// Compute the elapsed time
@@ -41,4 +42,28 @@ func main() {
 		println(b1[i])
 	}
 	fmt.Printf("Time to generate %v pseudo-random numbers with math/rand: %v\n", n, elapsed)
+
+	// Phase 2 - Using crypto/rand
+	// Initialize the byte slice
+	b2 := make([]byte, n)
+
+	// Get the time
+	start = time.Now()
+
+	// Generate the pseudo-random numbers
+	_, err = crand.Read(b2) // Where the magic happens!
+
+	// Compute the elapsed time
+	elapsed = time.Now().Sub(start)
+
+	// exit if error
+	if err != nil {
+		panic(err)
+	}
+
+	// In case n is very large, only print a few numbers
+	for i := 0; i < 5; i++ {
+		println(b2[i])
+	}
+	fmt.Printf("Time to generate %v pseudo-random numbers with crypto/rand: %v\n", n, elapsed)
 }
