@@ -15,5 +15,5 @@ func main() {
 	fmt.Printf("%s, what's your favorite color?\n", name)
 	var color string
 	fmt.Scanln(&color)
-	fmt.Printf("No way %s, %s is a very nice color. \nMy own favorite color is red. \n", name, color)
+	fmt.Printf("No way %s, %s is a very nice color. \nMy favorite color is red. \n", name, color)
 }
