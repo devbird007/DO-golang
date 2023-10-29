@@ -1,3 +1,6 @@
+// This demonstrates the capacities of the join function when
+// declared as a normal function.
+
 package main
 
 import "fmt"
@@ -13,16 +16,13 @@ func main() {
 
 	line = join(",", []string{"Sammy"})
 	fmt.Println(line)
-
-	test := []string{"Sammy", "Jessica", "Drew", "Jamie"}
-	fmt.Println(len(test))
 }
 
 func join(del string, values []string) string {
 	var line string
 	for i, v := range values {
 		line = line + v
-		if i == len(values)-1 {
+		if i != len(values)-1 {
 			line = line + del
 		}
 	}
