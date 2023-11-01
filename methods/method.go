@@ -1,8 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 type Creature struct {
 	Name     string
@@ -10,13 +8,13 @@ type Creature struct {
 }
 
 func (c Creature) Greet() {
-	fmt.Printf("%s says %s\n", c.Name, c.Greeting)
+	fmt.Printf("%s says %s!\n", c.Name, c.Greeting)
 }
 
 func main() {
 	sammy := Creature{
 		Name:     "Sammy",
-		Greeting: "Hello!",
+		Greeting: "Hello",
 	}
-	sammy.Greet() // Or Creature.Greet(sammy)
+	sammy.Greet()
 }
