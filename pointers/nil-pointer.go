@@ -8,7 +8,7 @@ type Creation struct {
 
 func main() {
 	var creation *Creation
-	creation = &Creation{"shark"}
+	creation = &Creation{Species: "shark"}
 
 	fmt.Printf("1) %+v\n", creation)
 	changeCreation(creation)
@@ -17,7 +17,7 @@ func main() {
 
 func changeCreation(creation *Creation) {
 	if creation == nil {
-		fmt.Println("creation is nil")
+		fmt.Println("creature is nil")
 		return
 	}
 
