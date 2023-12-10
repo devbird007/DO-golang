@@ -17,7 +17,7 @@ const (
 )
 
 func colorize(color Color, message string) {
-	fmt.Println(string(color), message, string(ColorReset))
+	fmt.Println(string(color) + message + string(ColorReset))
 }
 
 func main() {
