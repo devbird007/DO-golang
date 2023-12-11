@@ -10,7 +10,7 @@ import (
 
 func main() {
 	var count int
-	flag.IntVar(&count, "n", 10, "number of lines to read to from the file")
+	flag.IntVar(&count, "n", 5, "number of lines to read from the file")
 	flag.Parse()
 
 	var in io.Reader
@@ -23,7 +23,6 @@ func main() {
 		defer f.Close()
 
 		in = f
-
 	} else {
 		in = os.Stdin
 	}
