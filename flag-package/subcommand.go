@@ -54,7 +54,7 @@ func root(args []string) error {
 	subcommand := os.Args[1]
 
 	for _, cmd := range cmds {
-		if cmd.Name() = subcommand {
+		if cmd.Name() == subcommand {
 			cmd.Init(os.Args[2:])
 			return cmd.Run()
 		}
