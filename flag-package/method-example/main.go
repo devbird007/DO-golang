@@ -11,6 +11,7 @@ type Employee struct {
 }
 
 /* displaySalary() method has Employee as the receiver type */
+
 func (e Employee) displaySalary() {
 	fmt.Printf("Salary of %s is %s%d", e.name, e.currency, e.salary)
 }
@@ -21,6 +22,5 @@ func main() {
 		salary:   5000,
 		currency: "$",
 	}
-
-	emp1.displaySalary() // Calling displaySalary
+	emp1.displaySalary() // Calling displaySalary() method of Employee type
 }
