@@ -23,6 +23,3 @@ func main() {
 	}
 	fmt.Println("The string:", s)
 }
-
-// Return to Creating Custom Errors and Handling Panics
-// once structs, methods and interfaces are learnt.
