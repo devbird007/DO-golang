@@ -25,6 +25,7 @@ func main() {
 	name, size, err := capitalize("samurai jack")
 	if err != nil {
 		fmt.Println("An error occurred:", err)
+		return
 	}
 
 	fmt.Printf("Capitalized name: %s, length: %d\n", name, size)

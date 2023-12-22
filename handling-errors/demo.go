@@ -14,7 +14,6 @@ func capitalize(name string) (string, int, error) {
 }
 
 func main() {
-	var digit int
 	name, digit, err := capitalize("sammy")
 	if err != nil {
 		fmt.Println("Could not capitalize:", err)

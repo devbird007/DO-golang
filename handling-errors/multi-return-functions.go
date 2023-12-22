@@ -1,3 +1,4 @@
+/* Handling errors from multi-return functions */
 package main
 
 import (
