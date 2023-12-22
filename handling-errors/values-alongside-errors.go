@@ -1,3 +1,4 @@
+/* This is for returning errors alongside values */
 package main
 
 import (

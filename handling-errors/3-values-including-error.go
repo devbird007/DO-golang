@@ -1,3 +1,6 @@
+/* This demonstrates using an anonymous function to reduce boilerplate
+for multiple return value functions */
+
 package main
 
 import (
@@ -19,10 +22,9 @@ func capitalize(name string) (string, int, error) {
 }
 
 func main() {
-	name, size, err := capitalize("Samurai Jack")
+	name, size, err := capitalize("samurai jack")
 	if err != nil {
 		fmt.Println("An error occurred:", err)
-		return
 	}
 
 	fmt.Printf("Capitalized name: %s, length: %d\n", name, size)

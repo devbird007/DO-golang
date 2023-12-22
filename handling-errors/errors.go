@@ -12,6 +12,6 @@ func main() {
 	fmt.Println("Sammy says:", err)
 
 	// Using fmt.Errorf
-	ess := fmt.Errorf("error occured at %v", time.Now())
+	ess := fmt.Errorf("error occurred at: %v", time.Now())
 	fmt.Println("An error happened:", ess)
 }
